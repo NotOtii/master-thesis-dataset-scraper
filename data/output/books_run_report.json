@@ -1,0 +1,8 @@
+{
+  "run_id": "run_20260323_220922",
+  "source_name": "books_to_scrape",
+  "records_extracted": 1000,
+  "records_valid": 1000,
+  "records_invalid": 0,
+  "invalid_examples": []
+}
