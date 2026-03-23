@@ -1,0 +1,14 @@
+{
+  "run_id": "run_20260323_222513",
+  "source_name": "books_to_scrape",
+  "started_at": "2026-03-23T21:25:13.866841+00:00",
+  "finished_at": "2026-03-23T21:25:25.104154+00:00",
+  "duration_seconds": 11.237313,
+  "records_extracted": 1000,
+  "records_valid": 1000,
+  "records_invalid": 0,
+  "duplicates_removed": 0,
+  "output_json": "data\\output\\books_output.json",
+  "output_csv": "data\\output\\books_output.csv",
+  "invalid_examples": []
+}
