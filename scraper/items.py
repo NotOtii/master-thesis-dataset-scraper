@@ -2,6 +2,7 @@ import scrapy
 
 
 class BookItem(scrapy.Item):
+    record_id = scrapy.Field()
     title = scrapy.Field()
     price_gbp = scrapy.Field()
     in_stock = scrapy.Field()

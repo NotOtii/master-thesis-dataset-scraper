@@ -1,0 +1,18 @@
+source_name: books_to_scrape
+start_urls:
+  - "https://books.toscrape.com/"
+allowed_domains:
+  - "books.toscrape.com"
+
+dataset_type: books
+dynamic: false
+
+fields:
+  - title
+  - price_gbp
+  - in_stock
+  - rating
+  - product_page_url
+  - source_name
+  - scraped_at
+  - run_id

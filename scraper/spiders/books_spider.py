@@ -1,4 +1,5 @@
 import scrapy
+import hashlib
 from datetime import datetime, timezone
 
 from scraper.items import BookItem
@@ -59,6 +60,8 @@ class BooksSpider(scrapy.Spider):
             item["source_name"] = self.source_name
             item["scraped_at"] = datetime.now(timezone.utc).isoformat()
             item["run_id"] = self.run_id
+            stable_key = f"{self.source_name}|{item['product_page_url']}"
+            item["record_id"] = hashlib.sha256(stable_key.encode("utf-8")).hexdigest()
 
             yield item
 
